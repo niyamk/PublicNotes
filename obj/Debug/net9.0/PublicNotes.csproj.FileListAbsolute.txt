@@ -144,7 +144,6 @@ E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\rjsm
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\scopedcss\bundle\PublicNotes.styles.css
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\scopedcss\projectbundle\PublicNotes.bundle.scp.css
-E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\compressed\xmaopxjr9w-b9sayid5wm.gz
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\compressed\44pj1kthah-61n19gt1b8.gz
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\compressed\nmcjhl6cy1-xtxxf3hu2r.gz
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\compressed\5bj5gdfpef-bqjiyaj88i.gz
@@ -218,3 +217,4 @@ E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\refi
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\PublicNotes.pdb
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\PublicNotes.genruntimeconfig.cache
 E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\ref\PublicNotes.dll
+E:\clg_files\sem 5\dotnet\dotnet_final_project\PublicNotes\obj\Debug\net9.0\compressed\xmaopxjr9w-lu9za9xbq4.gz

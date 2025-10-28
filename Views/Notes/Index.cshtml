@@ -1,15 +1,8 @@
 @model IEnumerable<PublicNotes.Models.Note>
 
 @{
-    ViewData["Title"] = "Public Notes";
+    ViewData["Title"] = "Home Page";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Public Note Board</h1>
-    <p>Write a note and it will be visible to everyone!</p>
-</div>
-
-<hr />
 
 <div class="text-center">
     <div style="display: inline-block; text-align: left; min-width: 50%;">
@@ -25,7 +18,8 @@
                 <label for="Content" class="control-label">Note Content</label>
                 <textarea name="Content" class="form-control" rows="3" style="resize: both; min-width: 100%;"></textarea>
             </div>
-            <div class="form-group text-end">
+            
+            <div class="form-group text-end mt-3">
                 <input type="submit" value="Post Note" class="btn btn-primary" />
             </div>
         </form>
@@ -39,30 +33,31 @@
 </div>
 
 <div style="column-width: 320px; column-gap: 1rem;">
-   @foreach (var note in Model)
-{
-    <div class="card mb-3" style="break-inside: avoid; width: 100%;">
-        <div class="card-header">
-            <h5 class="card-title">@note.Title</h5>
-        </div>
-
-        <div class="card-body">
+    @foreach (var note in Model)
+    {
+        <div class="card mb-3 rounded-3 bg-dark border" style="break-inside: avoid; width: 100%;">
             
-            <p class="card-text" style="white-space: pre-wrap;">@note.Content</p>
+            <div class="card-header border-0">
+                <h5 class="card-title mb-0">@note.Title</h5>
+            </div>
 
-        </div>
+            <div class="card-body">
+                <p class="card-text" style="white-space: pre-wrap;">@note.Content</p>
+            </div>
 
-        <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-            <span> Posted on: @note.CreatedAt.ToShortDateString() </span>
-            <div class="d-flex">
-                <a asp-action="Edit" asp-route-id="@note.Id" class="btn btn-secondary btn-sm me-2">Edit</a>
+            <div class="card-footer border-0 d-flex justify-content-between align-items-center">
+                <span>
+                    Posted on: @note.CreatedAt.ToShortDateString()
+                </span>
                 
-                <form asp-action="Delete" method="post" asp-route-id="@note.Id" class="mb-0">
-                    @Html.AntiForgeryToken()
-                    <input type="submit" value="Delete" class="btn btn-danger btn-sm" />
-                </form>
+                <div class="d-flex">
+                    <a asp-action="Edit" asp-route-id="@note.Id" class="btn btn-secondary btn-sm me-2">Edit</a>
+                    <form asp-action="Delete" method="post" asp-route-id="@note.Id" class="mb-0">
+                        @Html.AntiForgeryToken()
+                        <input type="submit" value="Delete" class="btn btn-danger btn-sm" />
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-}
+    }
 </div>
